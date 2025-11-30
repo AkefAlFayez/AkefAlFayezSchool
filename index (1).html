@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>مدرسة عاكف الفايز الثانوية للبنين</title>
+    <meta name="description" content="الموقع الرسمي لمدرسة عاكف الفايز الثانوية للبنين — أخبار المدرسة، الأنشطة، الجداول، ووسائل التواصل." />
+    <meta name="theme-color" content="#0A3E91" />
+
+    <!-- favicon بسيط -->
+    <link rel="icon" href="./favicon.ico" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+      }
+      body {
+        font-family: 'Cairo', sans-serif;
+        background-color: #f8fafc;
+      }
+
+      @keyframes shake-gentle {
+        0%, 100% { transform: translateX(0); }
+        25% { transform: translateX(-3px) rotate(-2deg); }
+        75% { transform: translateX(3px) rotate(2deg); }
+      }
+      .hover-shake:hover {
+        animation: shake-gentle 0.4s ease-in-out;
+      }
+
+      @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+      }
+      .animate-float {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .slide-up {
+        animation: slideUp 0.8s ease-out forwards;
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      @keyframes slideUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { background: #f1f1f1; }
+      ::-webkit-scrollbar-thumb {
+        background: #0A3E91;
+        border-radius: 5px;
+      }
+      ::-webkit-scrollbar-thumb:hover { background: #1E90FF; }
+
+      /* fallback content styling while React loads */
+      #root .ssr-fallback {
+        max-width: 900px;
+        margin: 4rem auto;
+        padding: 2rem;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(10,62,145,0.08);
+        text-align: center;
+      }
+      #root .ssr-fallback h1 { font-size: 1.6rem; margin-bottom: 0.5rem; color: #0A3E91; }
+      #root .ssr-fallback p { color: #334155; }
+    </style>
+
+    <!-- إصلاح المسار ليعمل على GitHub Pages: استخدم مسارات نسبية -->
+    <link rel="stylesheet" href="./index.css">
+
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://aistudiocdn.com/react@^19.2.0/",
+        "react": "https://aistudiocdn.com/react@^19.2.0",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+        "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+      }
+    }
+    </script>
+
+    <!-- تحميل سكربت البناء (مسار نسبي) -->
+    <script type="module" crossorigin src="./assets/index-jDpjzCKC.js"></script>
+
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- محتوى احتياطي يظهر إذا لم يتم تشغيل JS أو قبل أن تقوم React بالتهيئة -->
+      <div class="ssr-fallback" role="status" aria-live="polite">
+        <h1>مدرسة عاكف الفايز الثانوية للبنين</h1>
+        <p>جاري تحميل الواجهة... إذا لم يتم تحميل الموقع، تأكد من تمكين JavaScript أو تحديث الصفحة.</p>
+      </div>
+    </div>
+
+    <!-- رسالة للمستخدم عند تعطيل JavaScript -->
+    <noscript>
+      <div style="direction:rtl;text-align:center;padding:2rem;background:#fff3cd;color:#856404;margin:1rem;border-radius:8px;max-width:900px;margin-left:auto;margin-right:auto;">
+        لعرض هذا الموقع، يجب تفعيل JavaScript في متصفحك.
+      </div>
+    </noscript>
+  </body>
+</html>
